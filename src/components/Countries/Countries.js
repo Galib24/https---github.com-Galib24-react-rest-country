@@ -10,7 +10,7 @@ const Countries = () => {
     }, [])
     return (
         <div >
-            <h1>welcome to country: {countries.length}</h1>
+            <h1>welcome to my country point: {countries.length}</h1>
 {
     countries.map(country => console.log(country))
 }
@@ -19,6 +19,7 @@ const Countries = () => {
          {
         countries.map(country => <Country 
             country= {country}
+            key={country.cca3}
             ></Country>)
        }
          </div>
